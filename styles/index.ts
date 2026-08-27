@@ -1,0 +1,1 @@
+export { praktikumStyles } from "./praktikum";
