@@ -9,10 +9,10 @@
 ========================================================= */
 
 // 1.1: Import Section
-import { Text, View } from "react-native";
-import type { Praktikum } from "@/types";
-import { getInstruktur, getKelas, getLab,getMatkul } from "@/functions";
+import { getInstruktur, getKelas, getLab, getMatkul } from "@/functions";
 import { praktikumStyles } from "@/styles";
+import type { Praktikum } from "@/types";
+import { Text, View } from "react-native";
 
 // 1.2: Props Declaration
 type Props = { praktikum: Praktikum }; //[1]
@@ -23,15 +23,15 @@ export default function PraktikumCard({ praktikum }: Props) { //[2]
     return (
     <View style={praktikumStyles.card}>
         {/* 3.1: Praktikum Name */}
-        <Text style={ { fontSize: 20,fontWeight: "bold",marginBottom: 10} }>
-            {getMatkul(praktikum.idMatkul)} {getKelas(praktikum.idKelas)} {/*[3]*/} 
+        <Text style={{ fontSize: 20, fontWeight: "bold", marginBottom: 10 }}>
+            {getMatkul(praktikum.idMatkul)} {getKelas(praktikum.idKelas)} {/*[3]*/}
         </Text>
 
         {/* 3.2: Praaktikum Lab */}
-        <Text style={praktikumStyles.text}>Lab: {getLab(praktikum.idLab)}</Text> {/*[3]*/} 
+        <Text style={praktikumStyles.text}>Lab: {getLab(praktikum.idLab)}</Text>{/*[3]*/}
 
         {/* 3.3: Praktikum Instruktur */}
-        <Text style={praktikumStyles.text}>Instruktur: {getInstruktur(praktikum.idInstruktur)}</Text> {/*[3]*/} 
+        <Text style={praktikumStyles.text}>Instruktur: {getInstruktur(praktikum.idInstruktur)}</Text>{/*[3]*/}
     </View>
     );
 }
