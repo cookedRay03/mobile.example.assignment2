@@ -59,5 +59,5 @@ const props: Props = {
 [2]: Ini berarti fungsi ini menerima parameter berupa Props (sesuai dengan yg kita deklarasikan sblmnya)
 Propsnya hanya berisi 1 data aja tapi yaitu "praktikum" berisi idPraktikum, idMatkul, dll. 
 [3]: Karena di const praktikum.ts hanya ada id nya saja bukan nama, maka kita perlu fungsi yang sudah kita buat
-sebelumnya di @/functiom untuk mencocokkan id itu dengan nama matkul dan kelas dari const kelas.ts dan matkul.ts
+sebelumnya di @/function untuk mencocokkan id itu dengan nama matkul dan kelas dari const kelas.ts dan matkul.ts
 =================================================================*/
