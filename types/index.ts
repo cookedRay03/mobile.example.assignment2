@@ -3,3 +3,5 @@ export type { Kelas } from "./kelas";
 export type { Lab } from "./lab";
 export type { Instruktur } from "./instruktur";
 export type { Praktikum } from "./praktikum";
+export type { Modul } from "./modul";
+export type { Pertemuan } from "./pertemuan";
